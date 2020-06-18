@@ -210,7 +210,7 @@ if (condicao1) {
 }
 */
 
-
+/*
 const nome = "Silvana";
 const sexo = "F";
 const idade = 48;
@@ -231,3 +231,25 @@ if(sexo=='F'){
         console.log("Que pena, você ainda não pode se aposentar!")
     }
 }
+
+*/
+
+
+//OBJETOS
+
+const aluno01 = {
+    nome: "Mayk",
+    nota: 9.8
+}
+
+const aluno02 = {
+    nome:"Diego",
+    nota: 10
+}
+
+const aluno03 = {
+    nome: "Fulano",
+    nota: 2
+}
+
+console.log(aluno01.nota)
