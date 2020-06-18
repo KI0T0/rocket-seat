@@ -237,7 +237,7 @@ if(sexo=='F'){
 
 //OBJETOS
 
-const aluno01 = {
+/*const aluno01 = {
     nome: "Mayk",
     nota: 9.8
 }
@@ -253,3 +253,26 @@ const aluno03 = {
 }
 
 console.log(aluno01.nota)
+*/
+
+//VETOR ou ARRAY
+
+const alunos = [
+    {
+        nome: "Mayk",
+        nota: 9.8
+    },
+    {
+        nome: "Diego",
+        nota: 10
+
+    },
+    {
+        nome: "Fulano",
+        nota: 2
+    }
+]
+
+const nomesDeAlunos = ["Mayk", "Diego", "Fulano"]
+console.log(alunos[2])
+console.log(nomesDeAlunos[2],nomesDeAlunos[1])
