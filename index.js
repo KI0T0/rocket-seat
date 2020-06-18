@@ -257,7 +257,7 @@ console.log(aluno01.nota)
 
 //VETOR ou ARRAY
 
-const alunos = [
+/*const alunos = [
     {
         nome: "Mayk",
         nota: 9.8
@@ -276,3 +276,65 @@ const alunos = [
 const nomesDeAlunos = ["Mayk", "Diego", "Fulano"]
 console.log(alunos[2])
 console.log(nomesDeAlunos[2],nomesDeAlunos[1])
+*/
+
+
+//---------------------------------------------
+
+
+//FUNÇÃO
+
+//Criar um programa que calcula a média
+// das turmas de alunos e envia
+// mensagem do cálculo da média
+
+const alunosDaTurmaA = 
+    [
+        {
+            nome:"Mayk",
+            nota:1.8
+        },
+        {
+            nome:"Diego",
+            nota:0
+        },
+        {
+            nome:"Fulano",
+            nota:2
+        }
+    ]
+
+const alunosDaTurmaB = 
+    [
+        {
+            nome:"Cleiton",
+            nota:10
+        },
+        {
+            nome:"Robson",
+            nota:10
+        },
+        {
+            nome:"Siclano",
+            nota:0
+        }
+    ]
+
+function calculaMedia(alunos){
+    return(alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+}
+
+const media1 = calculaMedia(alunosDaTurmaA)
+const media2 = calculaMedia(alunosDaTurmaB)
+
+enviaMensagem(media1, 'turmaA')
+enviaMensagem(media2, 'turmaB')
+
+
+function enviaMensagem(media, turma){
+    if(media > 5){
+        console.log(`A media da ${turma} foi de ${media}. Parabéns!`)
+    }else{
+        console.log(`A média da ${turma} é menor que 5`)
+    }
+}
