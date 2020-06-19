@@ -288,6 +288,7 @@ console.log(nomesDeAlunos[2],nomesDeAlunos[1])
 // das turmas de alunos e envia
 // mensagem do cálculo da média
 
+/*
 const alunosDaTurmaA = 
     [
         {
@@ -338,3 +339,121 @@ function enviaMensagem(media, turma){
         console.log(`A média da ${turma} é menor que 5`)
     }
 }
+*/
+
+
+//DESAFIO 1-2
+
+/*Desafios para fortalecer alguns conceitos, 
+entre eles:
+
+Objetos;
+Vetores.
+
+---------------------------------------------------
+Construção e impressão de objetos
+Crie um programa que armazena dados da empresa 
+Rocketseat dentro de um objeto chamado empresa. 
+Os dados a serem armazenados são:
+
+Nome: Rocketseat
+
+Cor: Roxo
+
+Foco: Programação
+
+Endereço:
+
+Rua: Rua Guilherme Gembala
+Número: 260
+Obs.: Para armazenar os dados de endereço da 
+empresa você pode criar objetos intercalados, 
+por exemplo:
+
+const usuario = {
+  nome: "Diego",
+  empresa: {
+    nome: "Rocketseat"
+  }
+};
+Imprima em tela utilizando console.log o nome 
+da empresa e seu endereço no seguinte formato:
+
+A empresa Rocketseat está localizada em 
+Rua Guilherme Gembala, 260
+Obs. Para imprimir em tela utilize o formato de 
+template strings, por exemplo
+
+console.log(`O nome do usuário é ${usuario.nome}`);
+*/
+
+const usuario = {
+    nome: 'Diego',
+    empresa: {
+      nome: 'Rocketseat',
+      cor: 'Roxo',
+      foco: 'Programação',
+      End: {
+        rua: 'Rua Guilherme Gembala',
+        num: 260
+      }
+    }
+  };
+
+  console.log(`A empresa ${usuario.empresa.nome} está 
+  localizada em ${usuario.empresa.End.rua},
+  ${usuario.empresa.End.num}`)
+
+
+ //----------------------------------------------------
+/*
+Vetores e objetos
+Crie um programa com um objeto para armazenar dados 
+de um programador como nome, idade e tecnologias que 
+trabalha.
+
+Um programador pode trabalhar com várias tecnologias, 
+por isso armazene essas tecnologias em um array.
+
+As tecnologias também devem ser objetos contendo nome 
+e especialidade, use as tecnologias abaixo:
+
+{ nome: 'C++', especialidade: 'Desktop' }
+{ nome: 'Python', especialidade: 'Data Science' }
+{ nome: 'JavaScript', especialidade: 'Web/Mobile' }
+Por exemplo:
+
+const objeto = {
+  propriedade: [
+    { nome: "C++", especialidade: "Desktop" },
+    { nome: "JavaScript", especialidade: "Web/Mobile" }
+  ]
+};
+Imprima em tela o nome e especialidade da primeira 
+tecnologia que o usuário utiliza no seguinte formato:
+
+O usuário Carlos tem 32 anos e usa a tecnologia C++ 
+com especialidade em Desktop
+
+*/
+
+const programador = {
+    nome:'Felipe',
+    idade: 29,
+}
+
+const tecnologias = {
+    propriedade: [
+        {nome:'C++', especialidade: 'Desktop'},
+        {nome:'Java', especialidade: 'Mobile'},
+        {nome: 'C#', especialidade: 'Desktop'},
+        {nome: 'JavaScript', 
+        especialidade: 'Desktop/Mobile'}
+    ]
+}
+
+console.log(`O usuário ${programador.nome} tem 
+${programador.idade} anos e usa a tecnologia 
+${tecnologias.propriedade[3].nome} com especialidade 
+em ${tecnologias.propriedade[3].especialidade}`)
+
