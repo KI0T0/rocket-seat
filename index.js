@@ -387,7 +387,7 @@ template strings, por exemplo
 console.log(`O nome do usuário é ${usuario.nome}`);
 */
 
-const usuario = {
+/*const usuario = {
     nome: 'Diego',
     empresa: {
       nome: 'Rocketseat',
@@ -403,7 +403,7 @@ const usuario = {
   console.log(`A empresa ${usuario.empresa.nome} está 
   localizada em ${usuario.empresa.End.rua},
   ${usuario.empresa.End.num}`)
-
+*/
 
  //----------------------------------------------------
 /*
@@ -437,7 +437,7 @@ com especialidade em Desktop
 
 */
 
-const programador = {
+/*const programador = {
     nome:'Felipe',
     idade: 29,
 }
@@ -456,4 +456,47 @@ console.log(`O usuário ${programador.nome} tem
 ${programador.idade} anos e usa a tecnologia 
 ${tecnologias.propriedade[3].nome} com especialidade 
 em ${tecnologias.propriedade[3].especialidade}`)
+*/
 
+//ESTRUTURA DE REPETIÇÃO
+
+const alunosDaTurmaA = 
+    [
+        {
+            nome:"Mayk",
+            nota:1.8
+        },
+        {
+            nome:"Diego",
+            nota:0
+        },
+        {
+            nome:"Fulano",
+            nota:2
+        },
+        {
+            nome:"Mais um aluno",
+            nota:10
+        }
+    ]
+    function calculaMedia(alunos){
+        let soma = 0;
+        for (let i = 0; i< alunos.length; i++){
+            soma = soma + alunos[i].nota
+        }
+        
+        const media = soma /alunos.length
+        return media
+    }
+
+    const media1 = calculaMedia(alunosDaTurmaA)
+
+    function enviaMensagem(media, turma){
+        if(media > 5){
+            console.log(`A media da ${turma} foi de ${media}. Parabéns!`)
+        }else{
+            console.log(`A média da ${turma} é menor que 5`)
+        }
+    }
+    
+    enviaMensagem(media1, 'turmaA')
