@@ -70,5 +70,7 @@ server.delete('/videos/:id', async (request, reply) => {
 
 server.listen({
     //port: 3333, usar para teste (em casa, por exemplo)
+    //Render requer que você escreva a linha abaixo para funcioonar:
+    host: '0.0.0.0',
     port: process.env.PORT ?? 3333
 })
