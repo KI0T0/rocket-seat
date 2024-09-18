@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://node-do-zero-yrkh.onrender.com/videos
 Content-type: application/json
 
 
@@ -11,12 +11,12 @@ Content-type: application/json
 
 ###
 
-GET http://localhost:3333/videos
+GET https://node-do-zero-yrkh.onrender.com/videos
 
 
 ###
 
-PUT http://localhost:3333/videos/f7150cd0-7c10-41d0-80b5-ff4d14f02b17
+PUT https://node-do-zero-yrkh.onrender.com/videos/f7150cd0-7c10-41d0-80b5-ff4d14f02b17
 Content-type: application/json
 
 
@@ -28,4 +28,4 @@ Content-type: application/json
 
 ###
 
-DELETE http://localhost:3333/videos/f7150cd0-7c10-41d0-80b5-ff4d14f02b17
+DELETE https://node-do-zero-yrkh.onrender.com/videos/f7150cd0-7c10-41d0-80b5-ff4d14f02b17
